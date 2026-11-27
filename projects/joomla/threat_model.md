@@ -120,7 +120,7 @@ Lower priority or out of scope:
   `libraries/` off the web, here as on a release.
 - `libraries/vendor/` other than the `joomla/*` packages above, and `media/vendor/`: upstream, unless Joomla's use
   creates the issue.
-- The sample data plugins (`plugins/sampledata/`) and the Cypress System tests under `tests/System/`.
+- The Cypress System tests under `tests/System/`.
 - Third-party extensions and live Joomla sites.
 
 ## How to exercise it
@@ -196,6 +196,8 @@ and any setting, extension or permission the finding depends on. Assess the stoc
 
 ## Anything to leave alone
 
+- Joomla's sample data plugins (`plugins/sampledata/`).
+- Host header injection.
 - Anything that needs Super User access, and what Super Users can do by design: unfiltered HTML, the template file
   editor, extension installation and Install from URL.
 - What Administrators can do by design: make the site request a URL through a Requests scheduled task; change the
