@@ -1,0 +1,71 @@
+# Joomla's default branch is the patch branch of the current stable minor (6.2-dev when this was written) and moves
+# to the next minor's patch branch when that minor is released, so following it needs no change here. Add #<branch>
+# to hold one.
+repo: https://github.com/joomla/joomla-cms
+homepage: https://www.joomla.org/
+
+# The Joomla! Security Strike Team (JSST) receives reports for Joomla core through its team mailbox, encrypted to the
+# team key below. GitHub security advisories stay off: the JSST coordinates by email.
+primary_contact: security@joomla.org
+disabled: false
+output_format:
+  email:
+    min_severity: low
+  github_security_advisory:
+    min_severity: none
+
+# JSST team key from https://developer.joomla.org/security/gpg-keys.html
+# Fingerprint 50F1 61F2 74CB 548B 942B FF4D 01D4 069F CA44 D4B9, valid until 2028-06-12
+pgp: |
+  -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+  mQINBGZp6mQBEADHo2unYoOp2FIvC1yuPBxErbAXyynV7s2dXgU4MeNLT/0QQCaW
+  rgQGOJdvCz52f8Js5J45Q0VO30xqXQZouBo2yVTk23RmJJaLAiAGqK2bH0WCKdUW
+  1ngyaF8gJrsLe1q9FZkumkCF7HCsopnduc7qszBJ1SHP9x9OR5jgS1CMGtZdeDbD
+  f8eUjoBWati/61t469NgW21YOUP6cSfEgNrJdAiwb+pjHiZFYdL5DUBi+C1d6++X
+  qoURT861082Lh+0WTjVhgaq0M8P0G5rjJohZTkZ6LKN6ET7AtsAlY7w4CGNc31/V
+  0pwpoD/ojYYMrGnBUbCGQSxuFYa6KvZ9dhBCmrLVmEaRFVUEJtimYnlBUub9J5xe
+  wqPC8BwAK/X/COVsq905nWcsygU3WmD1r7llEyKtzBK7pmXpQPzG0dTtECh8WpqE
+  D22QA/SzK6cj72bmbi4FkNJJ91V0t+JW6ai/+0Jtz7FXPH5h6/BkmB6bvPvVHr2q
+  msPBI9yQ1yTa1Vs1oguMEoUjbjRxsGIC330O/EmFo3A8UXvHIjQ+jxFi0LtE+5Qi
+  8IOFz4kdSya+Th4cqzA1McbpaKLHPuxhH+aa1byQE7ZoeSzu0YvbiF8cRk1vz/kh
+  aSFciMG++Vc3lsxqhw43rQ8ZdJgaiwu6eUBuG7KY9QnDPEwnLwQgQWYzYwARAQAB
+  tDFKb29tbGEgU2VjdXJpdHkgU3RyaWtlIFRlYW0gPHNlY3VyaXR5QGpvb21sYS5v
+  cmc+iQJUBBMBCgA+FiEEUPFh8nTLVIuUK/9NAdQGn8pE1LkFAmZp6mQCGwMFCQeG
+  H1UFCwkIBwMFFQoJCAsFFgIDAQACHgECF4AACgkQAdQGn8pE1LnyWRAAxhpdt6ub
+  mKKbc5qxgoYKVJD3+SZR2vULDNWPFqnANEo1jEZJ4/bWea8R/uuC1cieRPNCMQGY
+  GiFgzBgfcLXkHZu6iu0ScFil8fPo4ZQaBKqALUQctkGizMu9f0B0kYmHkGoA1g3S
+  IRwLxBZRvgFgnqGZVOt/clvfGDgjzGBRJsR1K23XlXvSQX2Que89Zslyg0l5QtJX
+  zkJc1X8lav25OFLk3ifhqisuf2zgDB4p1HZJErg4Olql2EukPKjFM5cdZcU4qXQP
+  9T3iwxzJ62r1NXfag7xhxdjFUBdd3Kv1tf5njWQMv8nfSDNsieV4WSeUUnlarj2f
+  LEkSSFdnncfCLk49dgkqHZTVZXJeRBsMTNdNbjqKFPv3TBV+R+Tq1hi3mC4iQIGM
+  U90ZLJZMYKv9s6ZJ9l+/QUu7eyU2lAOoGSytKe8dVCW+kPpwV7F58GLH0eE+5l6e
+  cm9l4KJlzqURqb2mm3GWYsnFaXHCW97jY3G/d2u9RMuPH3GA2F/M8AueGIktM/tL
+  PFn5EX21ymRgy7Gz6iGH/P1WPE+cC0mJaXrjv2RE2GxTPKDSMHVfCBNIxQ7UpBXt
+  oAWBfJvYQnH9YXJrHe3bvmVCefdfTR3yPD3uA96CBtohbR5ki7uL/S6YMjGFHeHF
+  VfLatj9W2us6MEgwG4SmQRqQPC6C1qX42I25Ag0EZmnqZAEQALBQG+cBqlh9MfKG
+  v8D0N4fDX7N5CGzkI5u1Bmw5u0NsZhzrVN0D4SWIwMJpNorT57M7t702nSF/bSxj
+  fgOhJ/Lp0D2Nb5aKX8gcB2KK+2brju0c7vwsTNSwwmZGeNOrBf7SWuEON9byu7Wi
+  YgR9Z10UJuX/vPRteY0nynC+6DBmE0FrwL//c1XM3UrXi1RNzUCbVnUwxb/yeqwz
+  jegRdyOU1vL0TpBGKO3/ZUWcQLC22lDkJzg5GMq3RzJqIuavzTxVlphDShVPmVao
+  4OrNhV+ZDtIg5CCYe/RPFpT3+R5APGJdic1N+Wv005eOCnZqxS2z/p65+ghj+VDv
+  9Onz3ghIMA6n4iJPunfSDVWRdgD1z3gCfYNcNV43oE5jiFqtfVSwPaeWcuUqZ37b
+  4qqsotMbluxyhs5cg3WmSD6sJ1Ie2cUDncYOTPc8tinfl0dQbdqtenORVENMS5w8
+  RKprv//V2YZdemRezjTlfLTtFCYojVCYpzosioa3SFf3DZwVuiI1fy01PUwBhs3C
+  /2iKlPEqTe0ZqsedkTZMJQ8wBLFcES7fxAg8uUBtw3keSd+F6WbDgQSieGi1tsoz
+  ZZLRzLrQHPm6gVb6ssNAqD4wDU9hAIbbZK6T1rv8qNALFmAK8Dq+Mt7Cdxawzeyc
+  XVumFclml9g4dwFIEP6dqBLfuHknABEBAAGJAjwEGAEKACYWIQRQ8WHydMtUi5Qr
+  /00B1AafykTUuQUCZmnqZAIbDAUJB4YfVQAKCRAB1AafykTUubGLD/9bykJqDM5O
+  zSrBmHMUKfv15OxNS/vOqFOUYuy/pevgPEP6moXuaEzKG4NQSjBaMsf3lFDaMO9x
+  YcmciwRClrLesj5EQba7IC1PKPU20UhP1jgi17riJXcv6ekcA0ngw+qmmqGcLVcq
+  ailNjhi3s25avNLEm1WznGgQl8QXu06oKOwvy4RNtYnlOS+Rp/3rWeexU3X6Ppo9
+  mXjbGtH/qLGi8PBUKSdJgGS8QW3RBB8j3VFA5aSax4Z1aCP+x2VfqGJmHd5/6ape
+  DpydAnYLIoG/qcmWtcatL7ds354Gm6F4CYX9ybtyTS2ZLDejdhn39b2XeTBa3Yur
+  AUzrY/RLogK3D7GVBN5QEalp4dmkTUgLx8U/hkdOt5pQw2QH/rmaYc3q5DgC0Wnw
+  L/bkAsWOParwY96RJ4JokMj93hHkczQ3JZmm8+A7RvJhI0IYp+stIFh7dIc3Ghqc
+  mAwGJ0bb23HfgLT+nCAzNcsC25OSnHCE76u++lsGUVd8Uvf5bFPkkEeTpAfFRdkg
+  4RIUFAhW1FPd/2D7FuRM4M90X+ZHpyzL3mEt8fxcFJ3rRRXHY68i36T33Kqz+TXi
+  zbzzzQWPTcr8/shPgCADhHEk2NRQ8s4KW52nha7vbClCadBuxQ8dyBFSKivUYXuz
+  9p6iXkKqrpXj8I74Byf59Uocj1186Id7UA==
+  =5WUD
+  -----END PGP PUBLIC KEY BLOCK-----
